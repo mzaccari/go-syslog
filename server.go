@@ -20,7 +20,7 @@ var (
 )
 
 const (
-	datagramChannelBufferSize = 10
+	datagramChannelBufferSize = 50
 	datagramReadBufferSize    = 128 * 1024
 )
 
