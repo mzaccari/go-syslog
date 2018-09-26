@@ -21,7 +21,7 @@ var (
 
 const (
 	datagramChannelBufferSize = 10
-	datagramReadBufferSize    = 64 * 1024
+	datagramReadBufferSize    = 128 * 1024
 )
 
 // A function type which gets the TLS peer name from the connection. Can return
