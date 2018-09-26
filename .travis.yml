@@ -11,12 +11,12 @@ matrix:
     - go: tip
 
 install:
- - rm -rf $GOPATH/src/gopkg.in/mzaccari
- - mkdir -p $GOPATH/src/gopkg.in/mzaccari
- - ln -s $PWD $GOPATH/src/gopkg.in/mzaccari/go-syslog.v2
- - cd $GOPATH/src/gopkg.in/mzaccari/go-syslog.v2 && go get -v -t ./...
+ - rm -rf $GOPATH/src/github.com/mzaccari
+ - mkdir -p $GOPATH/src/github.com/mzaccari
+ - ln -s $PWD $GOPATH/src/github.com/mzaccari/go-syslog
+ - cd $GOPATH/src/github.com/mzaccari/go-syslog && go get -v -t ./...
  
 script:
- - cd $GOPATH/src/gopkg.in/mzaccari/go-syslog.v2 && go test -v ./...
+ - cd $GOPATH/src/github.com/mzaccari/go-syslog && go test -v ./...
  
 sudo: false

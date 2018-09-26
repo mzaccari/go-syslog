@@ -3,7 +3,7 @@ package format
 import (
 	"bufio"
 
-	"gopkg.in/mzaccari/go-syslog.v2/internal/syslogparser/rfc5424"
+	"github.com/mzaccari/go-syslog/internal/syslogparser/rfc5424"
 )
 
 type RFC5424 struct{}
